@@ -5,18 +5,16 @@ const days = document.getElementById("day");
 const months = document.getElementById("month");
 const date = document.getElementById("date");
 const temp = document.getElementById("temp");
-const description = document.getElementById("desc");
-// const sunrise = document.getElementById("sunrise");
-//const sunset = document.getElementById("sunset");
+const description = document.getElementById("desc"); 
 
 let lat;
 let lon;
-let key = "7c707d67bfaea395afd4f3cf375077ca";
+let key = "*****Here enter your key******";
 let time = new Date();
 let day = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 let month = ["Jan", "Feb", "Mar", "Ape", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nav", "Dec"];
 
-//=== day and date ===//
+//=== day and date month ===//
 days.textContent = day[time.getDay()] + ",";
 date.textContent = time.getDate();
 months.textContent = month[time.getMonth()];
@@ -58,17 +56,9 @@ function checkWeather(lat, lon){
                     temp.innerHTML = tempF;
                 else temp.innerHTML = tempC;
             });
-
-
+        
             description.textContent = data.weather[0].description;
             icon.src = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
- 
-             // Converting Epoch(Unix) time to GMT
-        //   const sunriseGMT = new Date((data.sys.sunrise) * 1000);
-        //   const sunsetGMT = new Date((data.sys.sunset) * 1000);
-
-        //     sunrise.textContent =  sunriseGMT.toLocaleDateString() + ", " + sunriseGMT.toLocaleTimeString();
-        //     sunset.textContent =  sunsetGMT.toLocaleDateString() + ", " + sunsetGMT.toLocaleTimeString();
-
+  
     });
 } 
