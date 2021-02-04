@@ -1,0 +1,45 @@
+*,::after,::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body{
+    line-height: 1.5;
+    font-size: 1rem;
+    background:no-repeat center fixed;
+    background-origin: border-box;
+    background-size: cover;
+    background-image: url(Sky.jpg);
+     
+    color: #ffffff;
+    font-family: Verdana;
+ }
+    .container{
+        
+        margin: 0;
+        padding: 0; 
+        border: 0;
+        display: flex; 
+        justify-content: center;
+        
+    }
+        .contant{
+            padding-top: 5rem;
+            text-align:  center;
+            margin: 5rem;
+            color: black;
+            
+        }  
+        .dayAndDate{
+            display: flex;
+        }
+        .dayAndDate span{
+            padding: 0.2rem;
+        }
+@media screen and (max-width:800px){
+    .contant{
+        padding-top: 5rem;
+}
+
+    
