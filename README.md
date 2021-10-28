@@ -3,8 +3,7 @@
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
 
-- [Demo](#demo)
-<!-- - [Overview](#overview)  -->
+- [Demo](#demo) 
 - [Build](#build)
 - [How to clone this repository](#how-to-clone-this-repository)
 
