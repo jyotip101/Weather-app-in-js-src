@@ -37,7 +37,7 @@ window.addEventListener('load',() =>{
  
 function checkWeather(lat, lon){
 
-    const url = `http://api.openweathermap.org/data/2.5/weather?${lat}&${lon}&appid=${key}`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?${lat}&${lon}&appid=${key}`;
     
     fetch(url).then((Response) =>{
         return Response.json();
@@ -58,7 +58,7 @@ function checkWeather(lat, lon){
             });
         
             description.textContent = data.weather[0].description;
-            icon.src = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+            icon.src = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
   
     });
 } 
